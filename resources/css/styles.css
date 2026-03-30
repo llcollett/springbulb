@@ -158,13 +158,13 @@ main {
 
 
 /*smaller than default width*/
-@media (max-width: 1160px) {
+@media only screen and (max-width: 1160px) {
     nav li a {font-size: 1.5rem;}
 }
-@media (max-width: 1060px) {
+@media only screen and (max-width: 1060px) {
     nav li a {font-size: 1.25rem;}
 }
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
     nav li a {font-size: 1rem;}
 }
 @media only screen and (max-width: 860px) {
@@ -177,7 +177,7 @@ main {
     main {top: 12.5rem;}
     img {height: 12rem; width: auto;}
 }
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     h1 {font-size: 1rem;}
 }
 /*nested max widths for smaller screens and smaller font sizes specifically*/
