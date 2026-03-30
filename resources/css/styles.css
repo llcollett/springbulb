@@ -167,7 +167,7 @@ main {
 @media only screen and (min-width: 860px) and (max-width: 950px) {
     nav li a {font-size: 1rem;}
 }
-@media only screen and (min-width: 400px) and (max-width: 860px) {
+@media only screen and (max-width: 860px) {
     header {height: 12.5rem;}
     nav li {
         display: flex;
@@ -178,7 +178,7 @@ main {
     main {top: 12.5rem;}
     img {height: 12rem; width: auto;}
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     h1 {font-size: 1rem;}
 }
 /*nested max widths for smaller screens and smaller font sizes specifically*/
