@@ -167,7 +167,7 @@ main {
 @media (max-width: 950px) {
     nav li a {font-size: 1rem;}
 }
-@media (max-width: 860px) {
+@media only screen and (max-width: 860px) {
     header {height: 12.5rem;}
     nav li {
         display: flex;
@@ -181,18 +181,19 @@ main {
     h1 {font-size: 1rem;}
 }
 /*nested max widths for smaller screens and smaller font sizes specifically*/
-@media only screen and (max-width: 358px) {
+@media (max-width: 358px) {
 }
-@media only screen and (max-width: 300px) {
+@media (max-width: 300px) {
 
 }
 
 /*smaller than default height but only if not smaller than smallest specified width*/
-@media only screen and (max-height: 696px) and (min-width: 430px) {
+@media (max-height: 696px) and (min-width: 430px) {
+
 
 }
 
 /*larger*/
-@media only screen and (min-width: 1272px) {
+@media (min-width: 1272px) {
 
 }
