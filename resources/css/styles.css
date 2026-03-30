@@ -11,11 +11,21 @@ html, body {
 /* fonts and text */
 h1 {
     font-family: 'Major Mono Display', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
     color: white;
 }
 h2, h3, p {
     font-family: 'Datatype', Arial, Helvetica, sans-serif;
     color: black;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: 1rem;
 }
 #no-lower {
     text-transform: none;
@@ -63,7 +73,7 @@ header h1 a {
 nav li a {
     font-family: 'Major Mono Display', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: white;
     background-color: #fe9929;
     border: 0.25rem solid white;
@@ -139,4 +149,34 @@ main {
 }
 #link {
     padding: 0 1rem;
+}
+
+
+
+/*smaller than default width*/
+@media only screen and (max-width: 430px) {
+    h1 {font-size: 1rem}
+    .header .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+/*nested max widths for smaller screens and smaller font sizes specifically*/
+@media only screen and (max-width: 358px) {
+
+}
+@media only screen and (max-width: 300px) {
+
+}
+
+/*smaller than default height but only if not smaller than smallest specified width*/
+@media only screen and (max-height: 696px) and (min-width: 430px) {
+
+}
+
+/*larger*/
+@media only screen and (min-width: 1272px) {
+
 }
