@@ -158,22 +158,23 @@ main {
 
 
 /*smaller than default width*/
-@media only screen and (max-width: 1160px) {
+@media only screen and (min-width: 1060px) and (max-width: 1160px) {
     nav li a {font-size: 1.5rem;}
 }
-@media only screen and (max-width: 1060px) {
+@media only screen and (min-width: 950px) and (max-width: 1060px) {
     nav li a {font-size: 1.25rem;}
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (min-width: 860px) and (max-width: 950px) {
     nav li a {font-size: 1rem;}
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (min-width: 400px) and (max-width: 860px) {
     header {height: 12.5rem;}
     nav li {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
     }
+    nav li a {font-size: 1rem;}
     main {top: 12.5rem;}
     img {height: 12rem; width: auto;}
 }
