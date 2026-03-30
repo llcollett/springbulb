@@ -1,0 +1,142 @@
+
+/* generic */
+
+/* html and body*/
+html, body {
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: 0; padding: 0;
+    text-transform: lowercase;
+}
+
+/* fonts and text */
+h1 {
+    font-family: 'Major Mono Display', Arial, Helvetica, sans-serif;
+    color: white;
+}
+h2, h3, p {
+    font-family: 'Datatype', Arial, Helvetica, sans-serif;
+    color: black;
+}
+#no-lower {
+    text-transform: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* other generic */
+img {
+    height: 16rem;
+    width: auto;
+}
+
+/* header */
+header {
+    left: 0; right: 0; top: 0;
+    margin: 0; padding: 0;
+    height: 6rem;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: #cc4c02;
+    border-bottom: 0.5rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header-content {
+    margin: 0; padding: 0;
+    height: 90%; 
+    width: 98%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: transparent;
+}
+header h1, nav, nav li {
+    margin: 0; padding: 0;
+    display: inline-flex;
+}
+header h1 a {
+    color: white;
+}
+nav li a {
+    font-family: 'Major Mono Display', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #fe9929;
+    border: 0.25rem solid white;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+}
+nav li a:hover {
+    background-color: #fed98e;
+}
+#here {
+    color: black;
+    background-color: transparent;
+}
+#here:hover {
+    cursor: default;
+}
+
+/* generic main */
+main {
+    top: 6.5rem;
+    position: absolute;
+}
+.home, .about, .portfolio, .testimonials, .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* generic content blocks */
+.home-content, .about-content, .portfolio-content, 
+.testimonials-content, .contact-content {
+    width: 98%;
+}
+.about-content, .portfolio-images, .quote-block {
+    display: flex;
+    column-gap: 1rem;
+    flex-flow: row wrap;
+}
+
+/* about */
+.cv, .background {
+    max-width: 25rem;
+}
+
+/* portfolio */
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+}
+/* testimonials */
+.quote {
+    padding: 1rem;
+    border: 0.25rem solid black;
+    border-radius: 0.25rem;
+}
+
+/* contact */
+.contact p {
+    margin: 0; padding: 0;
+}
+.phone, .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-content a {
+    color: black;
+}
+#contact-icon {
+    font-size: 4rem;
+}
+#link {
+    padding: 0 1rem;
+}
