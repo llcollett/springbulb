@@ -162,29 +162,84 @@ main {
 
 
 /*smaller than default width*/
-@media only screen and (min-width: 1060px) and (max-width: 1160px) {
-    nav li a {font-size: 1.5rem;}
+@media only screen and (min-width: 1050px) and (max-width: 1250px) {
+    h1 {font-size: 1.75rem;}
+    .navigator a {font-size: 1.25rem;}
+    .contact a {font-size: 0.75rem;}
 }
-@media only screen and (min-width: 950px) and (max-width: 1060px) {
-    nav li a {font-size: 1.25rem;}
+@media only screen and (min-width: 980px) and (max-width: 1050px) {
+    h1 {font-size: 1.5rem;}
+    .navigator a {font-size: 1rem;}
+    .contact a {font-size: 0.7rem;}
 }
-@media only screen and (min-width: 860px) and (max-width: 950px) {
-    nav li a {font-size: 1rem;}
-}
-@media only screen and (min-width: 400px) and (max-width: 860px) {
-    header {height: 12.5rem;}
+@media only screen and (min-width: 900px) and (max-width: 980px) {
+    header {height: 10rem;}
     h1 {font-size: 2.5rem;}
-    nav li {
+    .navigator a {
+        font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
     }
-    nav li a {font-size: 1rem;}
-    main {top: 12.5rem;}
+    .contact a {font-size: 1rem;}
+    main {top: 10rem;}
     img {height: 12rem; width: auto;}
 }
-@media only screen and (max-width: 400px) {
-    h1 {font-size: 1rem;}
+@media only screen and (min-width: 720px) and (max-width: 900px) {
+    header {height: 10rem;}
+    h1 {font-size: 2rem;}
+    .navigator a {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    .contact a {font-size: 0.75rem;}
+    main {top: 10rem;}
+    img {height: 12rem; width: auto;}
+}
+@media only screen and (min-width: 580px) and (max-width: 720px) {
+    header {height: 16rem;}
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.75rem;
+    }
+    .logo img {
+        height: 4rem; 
+        margin-top: 1rem; 
+        margin-bottom: -1rem;
+    }
+    .contact {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+    main {top: 16rem;}
+}
+@media only screen and (min-width: 400px) and (max-width: 580px) {
+    header {height: 12rem;}
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.5rem;
+    }
+    .logo img {
+        height: 3rem; 
+        margin-top: 0.5rem; 
+        margin-bottom: -0.5rem;
+    }
+    h1 {font-size: 1.5rem;}
+    .navigator a {font-size: 1.25rem;}
+    .contact {
+        padding: 0.5rem;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+    main {top: 12rem;}
 }
 
 /*smaller than default height but only if not smaller than smallest specified width*/
@@ -194,6 +249,6 @@ main {
 }
 
 /*larger*/
-@media (min-width: 1272px) {
+@media (min-width: 1250px) {
 
 }
