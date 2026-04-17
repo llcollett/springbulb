@@ -41,9 +41,6 @@ header {
     border-bottom: 0.5rem solid black;
     text-transform: lowercase;
 }
-.header-content {
-    width: 98%;
-}
 /* logo and name */
 .logo img {
     height: 3rem;
@@ -111,7 +108,6 @@ p {
 }
 .home, .about, .portfolio, .testimonials {
     width: 100%;
-    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
