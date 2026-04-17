@@ -117,18 +117,18 @@ p {
 /* generic content blocks */
 .home-content, .about-content, .portfolio-content, 
 .testimonials-content {
-    width: 98%;
+    padding: 0.5rem;
 }
 .about-content, .portfolio-images, .quote-block {
     display: flex;
-    justify-content: space-around;
     flex-flow: row wrap;
 }
 
 /* about */
-.cv, .background {
+.about-image, .cv, .background {
     padding: 0.5rem;
     max-width: 25rem;
+    text-align: center;
 }
 
 /* portfolio */
