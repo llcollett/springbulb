@@ -108,6 +108,7 @@ p {
 }
 .home, .about, .portfolio, .testimonials {
     width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,12 +123,14 @@ p {
 .about-content, .portfolio-images, .quote-block {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* about */
 .about-image, .cv, .background {
     padding: 0.5rem;
-    max-width: 25rem;
+    max-width: 22rem;
     text-align: center;
 }
 
@@ -135,6 +138,9 @@ p {
 .portfolio-content {
     display: flex;
     flex-direction: column;
+}
+.portfolio-img {
+    margin: 0 1rem;
 }
 /* testimonials */
 .quote {
@@ -154,11 +160,12 @@ p {
     main {top: 12rem;}
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
     header {height: 9.5rem;}
     .header-content {
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
     .name h1 {
         padding: 0.3rem;
@@ -174,6 +181,15 @@ p {
         top: 9.5rem;
         position: absolute;
     }
+    .home, .about, .portfolio, .testimonials {
+        text-align: left;
+        align-items: baseline;
+    }
+    .about-content, .portfolio-content {
+        justify-content: left;
+        align-items: baseline;
+    }
+    .about-image, .cv, .background, .portfolio-images {text-align: left;}
     h2 {font-size: 1.75rem;}
     p {font-size: 1.25rem;}
 }
