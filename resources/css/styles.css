@@ -231,11 +231,12 @@ p {
 
 /* when short screens */
 @media only screen and (max-height: 500px) {
-    header {height: 10rem;}
+    header {height: 11.5rem;}
     .logo img {height: 4rem;}
     #main-name {font-size: 1.8rem;}
     #sub-name {font-size: 1.6rem;}
-    main {top: 10rem; position: absolute;}
+    .navigator a {padding: 0.3rem;}
+    main {top: 11.5rem; position: absolute;}
 }
 @media only screen and (max-height: 500px) and (min-width: 1050px) {
     header {height: 6rem;}
