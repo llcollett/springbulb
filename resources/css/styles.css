@@ -38,6 +38,7 @@ header {
     z-index: 10;
     position: fixed;
     background-color: #cc4c02;
+    /*background-color: #914d0a;*/
     border-bottom: 0.5rem solid black;
     font-family: 'Special Elite', serif;
 }
@@ -46,8 +47,12 @@ header {
     margin: 1rem 0 0.5rem;
 }
 /* logo and name */
+.logo {
+    margin-right: 1rem;
+}
 .logo img {
     height: 4.5rem;
+    border-radius: 1rem;
 }
 .name h1 {
     margin: 0; padding: 0;
@@ -63,13 +68,15 @@ header {
     color: white;
     text-transform: uppercase;
     background-color: #fe9929;
+    /*background-color: #4d9221;*/
     border: 0.125rem solid white;
     border-radius: 0.4rem;
     margin: 0.125rem 0.25rem;
     padding: 0.4rem 0.5rem 0.125rem;
 }
 .navigator a:hover {
-    background-color: #fed98e;
+    background-color: #cc4c02;
+    /*background-color: #4d9221;*/
 }
 #here {
     color: black;
